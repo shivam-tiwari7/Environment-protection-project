@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share Your Story</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f6f1; /* Light Creme background */
+            color: #333; /* Dark text color */
+        }
+
+        header {
+            background-color: #3498db; /* Light Blue background */
+            color: #fff; /* White text color */
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff; /* White background */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #3498db; /* Light Blue text color */
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 100px;
+            resize: none;
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: #3498db; /* Light Blue background */
+            color: #fff; /* White text color */
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #217dbb; /* Darker Blue on hover */
+        }
+
+        .story-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .story {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Share Your Story</h1>
+    </header>
+
+    <div class="container">
+        <h2>Write your story</h2>
+        <form id="storyForm">
+            <label for="userStory">Your Experience:</label>
+            <textarea id="userStory" name="userStory" required></textarea>
+            <button type="button" onclick="submitStory()">Share</button>
+        </form>
+
+        <h2>Shared Stories</h2>
+        <ul class="story-list" id="storyList">
+            <!-- Shared stories will be displayed here dynamically -->
+        </ul>
+    </div>
+
+    <script>
+        function submitStory() {
+            // Get the user's story
+            var userStory = document.getElementById('userStory').value;
+
+            // Create a new list item with the user's story
+            var listItem = document.createElement('li');
+            listItem.className = 'story';
+            listItem.textContent = userStory;
+
+            // Append the list item to the story list
+            var storyList = document.getElementById('storyList');
+            storyList.appendChild(listItem);
+
+            // Clear the input textarea
+            document.getElementById('userStory').value = '';
+        }
+    </script>
+
+</body>
+
+</html>

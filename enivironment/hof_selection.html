@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We Thank You</title>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Courgette&family=Work+Sans:wght@300&display=swap" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Work Sans', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #333; /* Dark text color */
+            background-color: #f9f6f1; /* Light Creme background */
+        }
+
+        .container {
+            background-color: #f9f6f1; /* Light Creme background */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .artist-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .artist-item {
+            margin: 10px;
+            text-align: center;
+        }
+
+        input[type="checkbox"] {
+            display: none;
+        }
+
+        label {
+            display: block;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        input[type="checkbox"]:checked+label {
+            transform: scale(1.1);
+        }
+
+        .artist-img {
+            max-width: 100px;
+            max-height: 100px;
+            border-radius: 50%;
+            margin-bottom: 5px;
+        }
+
+        #nextBtn {
+            background-color: transparent;
+            color: #333; /* Dark text color */
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+            text-decoration: none; /* Remove underline from link */
+        }
+
+        #nextBtn:hover {
+            background-color: #d34f1f; /* Darker Orange on hover */
+            color: #fff; /* White text color on hover */
+        }
+
+        a {
+            text-decoration: none;
+            color: #333; /* Dark text color */
+        }
+
+        p {
+            margin: 15px 0;
+        }
+
+        /* Added some spacing for visual separation */
+        button {
+            margin-top: 10px;
+        }
+
+        input[type="file"] {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Heroes Who Don't Need Superpowers</h2>
+        <ul class="artist-list">
+            <li class="artist-item">
+                <input type="checkbox" id="artist1">
+                <label for="artist1">
+                    <img src="./0.68287200_1605688546_sunita-narain.jpg" alt="Hero 1" class="artist-img">
+                    <p>Sunita Narain</p>
+                </label>
+            </li>
+            <!-- Add more artist items as needed -->
+            <li class="artist-item">
+                <input type="checkbox" id="artist2">
+                <label for="artist2">
+                    <img src="./Dr._Vandana_Shiva_DS.jpg" alt="Hero 2" class="artist-img">
+                    <p>Dr. Vandana Shiva</p>
+                </label>
+            </li>
+            <li class="artist-item">
+                <input type="checkbox" id="artist3">
+                <label for="artist3">
+                    <img src="./220px-Chandi_prasad_bhatt_1.jpg" alt="Hero 3" class="artist-img">
+                    <p>Chandi Prasad Bhatt</p>
+                </label>
+            </li>
+            <li class="artist-item">
+                <input type="checkbox" id="artist4">
+                <label for="artist4">
+                    <img src="./67a33448-96bd-47b1-9362-aba7859c7c37_1657163977302.jpg" alt="Hero 4" class="artist-img">
+                    <p>Medha Patkar</p>
+                </label>
+            </li>
+            <li class="artist-item">
+                <input type="checkbox" id="artist5">
+                <label for="artist5">
+                    <img src="./sb.jpg.avif" alt="hero 5" class="artist-img">
+                    <p>Sunderlal Bahuguna</p>
+                </label>
+            </li>
+            <li class="artist-item">
+                <input type="checkbox" id="artist6">
+                <label for="artist6">
+                    <img src="./Unknown.jpeg" alt="hero 6" class="artist-img">
+                    <p>John Muir</p>
+                </label>
+            </li>
+            <li class="artist-item">
+                <input type="checkbox" id="artist7">
+                <label for="artist7">
+                    <img src="./1290021.jpeg" alt="hero 7" class="artist-img">
+                    <p>Jamie Margolin</p>
+                </label>
+            </li>
+            <li class="artist-item">
+                <input type="checkbox" id="artist8">
+                <label for="artist8">
+                    <img src="./Julia-Butterfly-Hill-1998.jpg.webp" alt="hero 8" class="artist-img">
+                    <p>Julia Hill</p>
+                </label>
+            </li>
+            <li class="artist-item">
+                <input type="checkbox" id="artist9">
+                <label for="artist9">
+                    <img src="./Gifford_Pinchot_3c03915u.jpg" alt="hero 9" class="artist-img">
+                    <p>Gifford Pinchot</p>
+                </label>
+            </li>
+            <li class="artist-item">
+                <input type="checkbox" id="artist10">
+                <label for="artist10">
+                    <img src="./David_Brower.jpg" alt="hero 10" class="artist-img">
+                    <p>David Browser</p>
+                </label>
+            </li>
+        </ul>
+        <button id="nextBtn"><a href="homearchive2.html">Know it's your turn</a></button>
+        <p>Be Earth's champions, defenders of nature's grandeur. In every act, let's compose an anthem for a thriving planet.
+            Protecting the environment reveals our true strength and motivation. Join us, embrace nature's call, and together,
+            safeguard the beauty of our world for generations to come</p>
+        <p> Submit your work and make this planet a little better. </p>
+
+        <button onclick="submitForm()">Submit</button>
+
+        <!-- Upload button -->
+        <input type="file" id="fileInput">
+        <button onclick="uploadFile()">Upload</button>
+
+        <!-- Include this script if you want to use JavaScript -->
+        <script>
+            function submitForm() {
+                // Add your form submission logic here
+                alert("Form submitted!");
+            }
+
+            function uploadFile() {
+                // Add your file upload logic here
+                var fileInput = document.getElementById('fileInput');
+                var selectedFile = fileInput.files[0];
+                alert("File uploaded: " + selectedFile.name);
+            }
+        </script>
+    </div>
+
+</body>
+
+</html>

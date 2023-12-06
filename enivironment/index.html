@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Environment Protection</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f6f1; /* Light Creme */
+        }
+
+        header {
+            background-color: #76b7b2; /* Teal */
+            color: #f0f0f0;
+            text-align: center;
+            padding: 2em 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #a4d9d6; /* Light Teal */
+            padding: 1em 0;
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+            padding: 1em;
+            margin: 0 1em;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #8bb2af; /* Darker Teal */
+        }
+
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        .mySlides img {
+            width: 100%;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2em;
+        }
+
+        section {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2em;
+            overflow: hidden;
+        }
+
+        section h2 {
+            color: #5e615e; /* Dark Gray */
+            padding: 1em;
+            border-bottom: 1px solid #c8c8c8; /* Light Gray */
+        }
+
+        section p {
+            padding: 1em;
+        }
+
+        .background-art {
+            background: url('./eberhard-grossgasteiger-5P91SF0zNsI-unsplash.jpg') no-repeat center center fixed;
+            background-size: cover;
+            position: relative;
+            height: 300px;
+            margin-bottom: 2em;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background-color: #76b7b2; /* Teal */
+            color: #f0f0f0;
+        }
+
+        /* New Style for the Aesthetic List */
+        .aesthetic-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .aesthetic-list li {
+            background-color: #f4d03f; /* Yellow */
+            color: #333;
+            padding: 0.8em;
+            margin-bottom: 0.5em;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Environment Protection</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="movies.html">Movies</a>
+        <a href="books.html">Books</a>
+        <a href="documentaries.html">Documentary</a>
+        <a href="audiobooks.html">Audiobook</a>
+        <a href="Story page.html">Stories</a>
+        <a href="contact.html">Contact</a>
+
+    </nav>
+
+    <div class="background-art"></div>
+
+    <div class="slideshow-container">
+        <div class="mySlides">
+            <img src="./pic1.jpeg" alt="Slide 1">
+        </div>
+
+        <div class="mySlides">
+            <img src="./pic2.jpeg" alt="Slide 2">
+        </div>
+
+        <div class="mySlides">
+            <img src="./1000_F_361105291_hSewiNo7TOrlMNmKZeC6SJNo42yXk7hI.jpg" alt="Slide 3">
+        </div>
+    </div>
+
+    <script>
+        let slideIndex = 0;
+
+        function showSlides() {
+            let i;
+            const slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 4000); // Change slide every 4 seconds
+        }
+
+        showSlides();
+    </script>
+
+    <div class="container">
+        <section>
+            <h2>Welcome to Our Page</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur, neque id aliquam tincidunt, quam
+                mauris tincidunt augue, sit amet fringilla elit ligula nec massa. Integer nec fermentum justo.
+            </p>
+        </section>
+
+        <section>
+            <h2>About Us</h2>
+            <p>
+                Curabitur suscipit lacus vel libero cursus, id aliquet est accumsan. Proin sed orci sit amet velit
+                hendrerit semper. Nullam aliquet, nunc quis lacinia fringilla, turpis lectus bibendum odio, nec varius
+                purus metus id lectus.
+            </p>
+        </section>
+
+        <section>
+            <h2>Initiatives</h2>
+            <p>
+                Phasellus sollicitudin lacus id velit fermentum, vel ultrices orci rhoncus. Sed auctor mauris in
+                tristique fermentum. Nunc at felis auctor, suscipit arcu vitae, aliquam ligula.
+            </p>
+        </section>
+
+        <section>
+            <h2>Tips for a Greener Life</h2>
+            <p>
+                Integer non tortor a dui fermentum imperdiet. Ut cursus sapien a ipsum malesuada, a pulvinar odio
+                bibendum. Fusce ac neque nec ex malesuada cursus.
+            </p>
+        </section>
+
+        <section id="inspiration">
+            <h2>Situation Right now</h2>
+            <ul class="aesthetic-list">
+                <li>Plant a tree and watch it grow.</li>
+                <li>Take a walk in the park and connect with nature.</li>
+                <li>Reduce, Reuse, Recycle - make it a lifestyle.</li>
+                <li>Create a compost bin for kitchen waste.</li>
+                <li>Switch to reusable and sustainable products.</li>
+                <li>Conserve water by fixing leaks and using it wisely.</li>
+                <li>Support local and sustainable businesses.</li>
+                
+            </ul>
+        </section>
+    </div>
+
+</body>
+
+</html>
